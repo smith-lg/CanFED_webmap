@@ -1,0 +1,146 @@
+body {
+    margin: 0; 
+    padding: 0; 
+  }
+     
+p {
+    font-size: 0.85em;
+    margin: 10px;
+    text-align: left;
+  }
+
+    
+#map {   
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  height:calc(100vh);
+  overflow: auto;
+  }
+    
+
+  /* Rules for how search/filter/legend options will be displayed */
+  .map-overlay-search {
+    position: absolute;    
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 17rem;
+    top: 70px;
+    left: 10px;
+    padding: 10px;
+    overflow: visible;
+    }
+
+  .map-overlay-data {
+    position: absolute;    
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 17rem;
+    top: 230px;
+    left: 10px;
+    padding: 10px;
+    overflow: visible;
+    }
+
+    .map-overlay-search label,
+    .map-overlay-data label {
+      display: block;
+      font-weight: bold;
+      margin: 0 0 5px;
+      }
+
+    .map-overlay-search fieldset,
+    .map-overlay-data fieldset {
+      border: none;
+      padding: 0;
+      margin: 0 0 10px;
+      max-width: 100%;
+      }
+    
+
+    .map-overlay-search button {
+      display: inline-block;
+      color: #fff;
+      background-color: #ee8a65;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      }
+         
+      .map-overlay-search button:hover {
+        background-color: #ecbaa8;
+        }
+
+      .map-overlay-data button {
+          background-color: #3386c0;
+          color: #fff;
+          display: block;
+          border: none;
+          cursor: pointer;
+          border-radius: 3px;
+          padding: 0px 20px;
+          }
+           
+          .map-overlay-data button:hover {
+          background-color: #4ea0da;
+          }
+
+    .geocoder {
+      border: none;
+      padding: 0;
+      margin: 0 0 10px;
+      }
+            
+      .mapboxgl-ctrl-geocoder {
+        max-width: 100%;
+        }
+
+    
+    .btn-control {
+          font: bold 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+          background-color: #3386c0;
+          color: #fff;
+          position: absolute;
+          top: 160px;
+          right: 9px;
+          z-index: 1;
+          border: none;
+          width: 30px;
+          display: block;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 3px;
+          text-align: center;
+          }
+           
+          .btn-control:hover {
+          background-color: #4ea0da;
+          }
+
+
+
+    .legend {
+        background-color: #fff;
+        border-radius: 3px;
+        bottom: 30px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        z-index: 1;
+        }
+         
+      .legend h4 {
+        margin: 0 0 10px;
+        }
+         
+      .legend div span {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+        }
+
+
